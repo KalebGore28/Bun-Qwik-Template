@@ -1,12 +1,20 @@
+# Ignored Directories
+.devcontainer
+.vscode
+dist
 node_modules
+server
+tmp
+
+# Ignored Files
 Dockerfile*
-docker-compose*
 .dockerignore
+
+docker-compose*
 .git
 .gitignore
 README.md
 LICENSE
-.vscode
 Makefile
 helm-charts
 .env

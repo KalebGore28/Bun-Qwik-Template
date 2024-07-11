@@ -27,10 +27,10 @@ RUN apt-get -y update; apt-get -y install curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && . ~/.nvm/nvm.sh && nvm install 20 && bun test && bun run build
 
 # copy production dependencies and source code into final image
-FROM base AS release
+FROM oven/bun:canary-alpine AS release
+RUN apk update; apk upgrade
 COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /usr/src/app/server server
-COPY --from=prerelease /usr/src/app/adapters adapters
 COPY --from=prerelease /usr/src/app/dist dist
 COPY --from=prerelease /usr/src/app/package.json .
 
