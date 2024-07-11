@@ -18,6 +18,7 @@
     "build.server": "vite build -c adapters/bun/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
     "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
+    "docker": "docker build --pull -t my-qwik-empty-starter .",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "fmt": "prettier --write .",

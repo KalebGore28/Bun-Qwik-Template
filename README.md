@@ -1,12 +1,5 @@
 ## Containerized Version of Bun and Qwik
 
-# Directions when opening project in new container:
-1. Close Shell and Reopen It
-2. Install npm dependency for qwik
-```shell
-nvm install 20
-```
-
 # Qwik City App ⚡️
 
 - [Qwik Docs](https://qwik.dev/)
