@@ -1,0 +1,8 @@
+{
+  "cSpell.words": [
+    "Qwik",
+    "undici"
+  ],
+  "prettier.configPath": ".prettierrc.mjs",
+  "prettier.tabWidth": 4
+}
