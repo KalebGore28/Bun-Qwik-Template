@@ -1,7 +1,14 @@
 {
   "cSpell.words": [
+    "bradlc",
+    "dbaeumer",
+    "esbenp",
+    "Expt",
+    "intellicode",
     "Qwik",
-    "undici"
+    "tailwindshades",
+    "undici",
+    "vscodeintellicode"
   ],
   "prettier.configPath": ".prettierrc.mjs",
   "prettier.tabWidth": 4

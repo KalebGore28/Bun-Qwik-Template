@@ -1,33 +1,33 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-  "name": "Custom Bun Dev Container",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "zh9528.file-size",
-        "wix.vscode-import-cost",
-        "VisualStudioExptTeam.vscodeintellicode",
-        "VisualStudioExptTeam.intellicode-api-usage-examples",
-        "lllllllqw.jsdoc",
-        "esbenp.prettier-vscode",
-        "bradlc.vscode-tailwindcss",
-        "bourhaouta.tailwindshades",
-        "streetsidesoftware.code-spell-checker",
-        "stivo.tailwind-fold",
-        "oven.bun-vscode",
-        "GitHub.copilot"
-      ]
-    }
-  },
-  "postCreateCommand": "bun install && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && . ~/.nvm/nvm.sh && nvm install 20"
+	"name": "Custom Bun Dev Container",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"zh9528.file-size",
+				"wix.vscode-import-cost",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"lllllllqw.jsdoc",
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss",
+				"bourhaouta.tailwindshades",
+				"streetsidesoftware.code-spell-checker",
+				"stivo.tailwind-fold",
+				"oven.bun-vscode",
+				"GitHub.copilot"
+			]
+		}
+	},
+	"postCreateCommand": "bun install && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && . ~/.nvm/nvm.sh && nvm install 20"
 }
