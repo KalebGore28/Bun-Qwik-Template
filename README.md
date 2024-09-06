@@ -37,7 +37,7 @@ Inside your project, you'll see the following directory structure:
 Use the `bun qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/).
 
 ```shell
-bun qwik add # or `bun qwik add`
+bun run qwik add # or `bun qwik add`
 ```
 
 ## Development
@@ -45,7 +45,7 @@ bun qwik add # or `bun qwik add`
 Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
 
 ```shell
-npm start # or `bun start`
+bun run dev # or `bun dev`
 ```
 
 > Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
@@ -55,7 +55,7 @@ npm start # or `bun start`
 The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
 
 ```shell
-bun preview # or `bun preview`
+bun run preview # or `bun preview`
 ```
 
 ## Production
@@ -63,15 +63,23 @@ bun preview # or `bun preview`
 The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
 
 ```shell
-bun build # or `bun build`
+bun run build # or `bun build`
+```
+
+## Docker
+
+The docker build will create a containerized production ready version of you app. 
+
+```shell
+bun run docker # or `bun build`
 ```
 
 ## Bun Server
 
 This app has a minimal [Bun server](https://bun.sh/docs/api/http) implementation. After running a full build, you can preview the build using the command:
 
-```
-bun run serve
+```shell
+bun run serve # or `bun serve`
 ```
 
 Then visit [http://localhost:3000/](http://localhost:3000/)
