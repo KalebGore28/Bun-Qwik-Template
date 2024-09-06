@@ -16,16 +16,12 @@
 				"dbaeumer.vscode-eslint",
 				"zh9528.file-size",
 				"wix.vscode-import-cost",
-				"VisualStudioExptTeam.vscodeintellicode",
-				"VisualStudioExptTeam.intellicode-api-usage-examples",
 				"lllllllqw.jsdoc",
 				"esbenp.prettier-vscode",
 				"bradlc.vscode-tailwindcss",
 				"bourhaouta.tailwindshades",
-				"streetsidesoftware.code-spell-checker",
 				"stivo.tailwind-fold",
-				"oven.bun-vscode",
-				"GitHub.copilot"
+				"oven.bun-vscode"
 			]
 		}
 	},
