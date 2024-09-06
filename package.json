@@ -26,7 +26,7 @@
 		"lint": "eslint",
 		"preview": "qwik build preview && vite preview --open",
 		"serve": "bun server/entry.bun.js",
-		"start": "vite --open --mode ssr",
+		"start": "vite --open --mode ssr --host",
 		"qwik": "qwik"
 	},
 	"devDependencies": {
