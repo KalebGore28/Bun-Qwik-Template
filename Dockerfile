@@ -24,7 +24,7 @@ COPY . .
 # [optional] tests & build
 ENV NODE_ENV=production
 RUN apt-get -y update; apt-get -y install curl
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && . ~/.nvm/nvm.sh && nvm install 20 && bun test && bun run build
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash && . ~/.nvm/nvm.sh && nvm install 20 && bun test && bun run build
 
 # copy production dependencies and source code into final image
 FROM oven/bun:canary-alpine AS release

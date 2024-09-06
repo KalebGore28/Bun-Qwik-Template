@@ -21,9 +21,10 @@
 				"bradlc.vscode-tailwindcss",
 				"bourhaouta.tailwindshades",
 				"stivo.tailwind-fold",
-				"oven.bun-vscode"
+				"oven.bun-vscode",
+				"GitHub.copilot"
 			]
 		}
 	},
-	"postCreateCommand": "bun install && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && . ~/.nvm/nvm.sh && nvm install 20"
+"postCreateCommand": "bun install && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && export NVM_DIR=\"$HOME/.nvm\" && [ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\" && nvm install 20 && echo 'export NVM_DIR=\"$HOME/.nvm\"' >> ~/.bashrc && echo '[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"' >> ~/.bashrc"
 }
