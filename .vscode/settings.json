@@ -11,5 +11,4 @@
     "vscodeintellicode"
   ],
   "prettier.configPath": ".prettierrc.mjs",
-  "prettier.tabWidth": 4
 }
