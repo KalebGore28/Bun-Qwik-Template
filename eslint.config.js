@@ -1,47 +1,12 @@
-/** @format */
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import tseslint from "typescript-eslint";
 
-// eslint.config.js
+
 export default [
-  {
-    ignores: [
-      "**/*.log",
-      "**/.DS_Store",
-      "*.",
-      ".vscode/settings.json",
-      ".history",
-      ".yarn",
-      "bazel-*",
-      "bazel-bin",
-      "bazel-out",
-      "bazel-qwik",
-      "bazel-testlogs",
-      "dist",
-      "dist-dev",
-      "lib",
-      "lib-types",
-      "etc",
-      "external",
-      "node_modules",
-      "temp",
-      "tsc-out",
-      "tsdoc-metadata.json",
-      "target",
-      "output",
-      "rollup.config.js",
-      "build",
-      ".cache",
-      ".vscode",
-      ".rollup.cache",
-      "dist",
-      "tsconfig.tsbuildinfo",
-      "vite.config.ts",
-      "*.spec.tsx",
-      "*.spec.ts",
-      ".netlify",
-      "pnpm-lock.yaml",
-      "package-lock.json",
-      "yarn.lock",
-      "server",
-    ],
-  },
+  {files: ["**/*.{js,mjs,cjs,ts}"]},
+  {files: ["**/*.js"], languageOptions: {sourceType: "script"}},
+  {languageOptions: { globals: globals.browser }},
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
 ];
