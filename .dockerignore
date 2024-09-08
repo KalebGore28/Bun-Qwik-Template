@@ -1,23 +1,14 @@
-# Ignored Directories
-.devcontainer
-.vscode
-dist
-node_modules
-server
-tmp
+# Ignore Everything
+**
 
-# Ignored Files
-Dockerfile*
-.dockerignore
+# Allow Directories
+!adapters/
+!public/
+!src/
 
-docker-compose*
-.git
-.gitignore
-README.md
-LICENSE
-Makefile
-helm-charts
-.env
-.editorconfig
-.idea
-coverage*
+# Allow Files
+!.eslintrc.cjs
+!bun.lockb
+!package.json
+!tsconfig.json
+!vite.config.ts
