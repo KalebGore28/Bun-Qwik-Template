@@ -8,6 +8,7 @@
 
 # Allow Files
 !.eslintrc.cjs
+!eslint.config.js
 !bun.lockb
 !package.json
 !tsconfig.json
