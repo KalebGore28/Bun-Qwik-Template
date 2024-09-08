@@ -24,10 +24,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Editor
-.vscode/*
-!.vscode/settings.json
-!.vscode/launch.json
-!.vscode/*.code-snippets
+.vscode/
 
 .idea
 .DS_Store
