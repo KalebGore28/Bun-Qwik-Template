@@ -2,7 +2,7 @@
 
 -   **Development Environment**: This project includes a dev container configuration that automatically sets up a ready-to-go development environment using Visual Studio Code.
 
-    > **Note:** You may need to kill the terminal and reopen it in VS Code.
+    > **Note:** You may need to kill the terminal and reopen it in Visual Studio Code.
 
 -   **Production Container**: Provides a [command](#Docker) and Dockerfile to containerize the entire project into a production-ready Docker container.
 -   **Dependencies**:
