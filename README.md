@@ -1,4 +1,11 @@
-## Containerized Version of Bun and Qwik
+# Containerized Bun-Qwik Stack
+
+- **Development Environment**: This project includes a dev container configuration that automatically sets up a ready-to-go development environment using Visual Studio Code.
+- **Production Container**: Provides a [command](#Docker) and Dockerfile to containerize the entire project into a production-ready Docker container.
+- **Dependencies**:
+  - Docker
+  - Visual Studio Code
+  - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension from the VS Code Marketplace
 
 # Qwik City App ⚡️
 
@@ -71,7 +78,7 @@ bun run build # or `bun build`
 The docker build will create a containerized production ready version of you app. 
 
 ```shell
-bun run docker # or `bun build`
+bun run docker # or `bun docker`
 ```
 
 ## Bun Server
