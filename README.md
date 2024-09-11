@@ -1,19 +1,22 @@
 # Containerized Bun-Qwik Stack
 
-- **Development Environment**: This project includes a dev container configuration that automatically sets up a ready-to-go development environment using Visual Studio Code.
-- **Production Container**: Provides a [command](#Docker) and Dockerfile to containerize the entire project into a production-ready Docker container.
-- **Dependencies**:
-  - Docker
-  - Visual Studio Code
-  - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension from the VS Code Marketplace
+-   **Development Environment**: This project includes a dev container configuration that automatically sets up a ready-to-go development environment using Visual Studio Code.
+
+    > **Note:** You may need to kill the terminal and reopen it in VS Code.
+
+-   **Production Container**: Provides a [command](#Docker) and Dockerfile to containerize the entire project into a production-ready Docker container.
+-   **Dependencies**:
+    -   Docker
+    -   Visual Studio Code
+    -   [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension from the VS Code Marketplace
 
 # Qwik City App ⚡️
 
-- [Qwik Docs](https://qwik.dev/)
-- [Discord](https://qwik.dev/chat)
-- [Qwik GitHub](https://github.com/QwikDev/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+-   [Qwik Docs](https://qwik.dev/)
+-   [Discord](https://qwik.dev/chat)
+-   [Qwik GitHub](https://github.com/QwikDev/qwik)
+-   [@QwikDev](https://twitter.com/QwikDev)
+-   [Vite](https://vitejs.dev/)
 
 ---
 
@@ -33,11 +36,11 @@ Inside your project, you'll see the following directory structure:
         └── ...
 ```
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/qwikcity/routing/overview/) for more info.
+-   `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/qwikcity/routing/overview/) for more info.
 
-- `src/components`: Recommended directory for components.
+-   `src/components`: Recommended directory for components.
 
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+-   `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 
 ## Add Integrations and deployment
 
@@ -75,7 +78,7 @@ bun run build # or `bun build`
 
 ## Docker
 
-The docker build will create a containerized production ready version of you app. 
+The docker build will create a containerized production ready version of you app.
 
 ```shell
 bun run docker # or `bun docker`
