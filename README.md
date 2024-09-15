@@ -10,6 +10,8 @@
     -   Visual Studio Code
     -   [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension from the VS Code Marketplace
 
+    > **Updating Bun:** If you need to update bun, just rebuild the container.
+
 # Qwik City App ⚡️
 
 -   [Qwik Docs](https://qwik.dev/)
