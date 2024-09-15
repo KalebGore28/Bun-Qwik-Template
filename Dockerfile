@@ -1,6 +1,6 @@
 # Use the official Bun image
 # See all versions at https://hub.docker.com/r/oven/bun/tags
-FROM oven/bun:canary-slim AS base
+FROM oven/bun:alpine AS base
 
 WORKDIR /usr/src/app
 
@@ -23,8 +23,8 @@ COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
 
 # Build the app
-RUN apt-get -y update; apt-get -y install curl
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash && . ~/.nvm/nvm.sh && nvm install 20 && bun run build
+RUN apk update && apk add nodejs
+RUN bun run build
 
 # Copy production dependencies and source code into final image
 FROM oven/bun:distroless AS release
